@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".preview"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPagerPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@drawable/semaka3"
+            tools:listitem="@layout/row_preview">
+        </androidx.viewpager.widget.ViewPager>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="47dp"
+                android:fontFamily="sans-serif"
+                android:text="Wai lalaan"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.72"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="17dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.19"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="28dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_placeholder" />
+
+                <TextView
+                    android:id="@+id/lokasiPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:text="Gisting,Kab.Tanggamus,Tanggamus,Lampung,ID"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="13dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sun"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/inicuaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:text="Cuaca : Hujan"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tvCuaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="29°C"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageButton
+                    android:id="@+id/btnLokasi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_directions_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telusuri"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Deskripsi"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/descPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jaringan lokal yang di ping adalah www.google.com di cmd windows dengan fungsi “ping google.com -n 1000” dengan hasil akhir sebagai berikut : Ping statistics for 216.239.38.120: Packets: Sent = 1000, Received = 980, Lost = 20 (2% loss) Approximate round trip times in milli-seconds: Minimum = 24ms, Maximum = 2922ms, Average = 105ms"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"/>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gambarListWisata"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:tint="#6F000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                android:src="@drawable/load" />
+
+            <TextView
+                android:id="@+id/NamaListWisata"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Wai lalaan"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/gambarListWisata"
+                app:layout_constraintTop_toTopOf="@+id/gambarListWisata"
+                app:layout_constraintVertical_bias="0.85"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="20dp" />
+            <TextView
+                android:id="@+id/lokasiGeo"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/namaCuaca"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/descListWisata"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/NamaListWisata"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="30dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_placeholder" />
+
+                <TextView
+                    android:id="@+id/alamatListWisata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:text="Gisting,Kab.Tanggamus,Tanggamus,Lampung,ID"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

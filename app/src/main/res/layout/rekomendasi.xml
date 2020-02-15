@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gambarRekomendasi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tint="#6F000000"
+                android:scaleType="centerCrop"
+                android:src="@android:color/black" />
+
+            <TextView
+                android:id="@+id/NamaRekomendasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/grand_hotel"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15pt"
+                android:textStyle="bold"
+                tools:text="ini nama wisata" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="180dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_placeholder" />
+
+                <TextView
+                    android:id="@+id/AlamatRekomendasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    tools:text="deskripsi singkat" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/lokasiGeoRekomendasi"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/namaCuacaRekomendasi"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/descRekomendasi"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints" />
+
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
